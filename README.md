@@ -94,16 +94,29 @@ Isso irá rodar o programa, que executará os três cenários de teste e imprimi
 ### Exemplo de Saída
 
 ```
-Executando Selection Sort com 50000 elementos em 3 cenários:
+--- Cenário: Pior Caso (Reverso) (N=10) ---
+Array original:
+9 8 7 6 5 4 3 2 1 0 
+Ordenação concluída.
+Array ordenado:
+0 1 2 3 4 5 6 7 8 9 
+Tempo de execução: 0.0000 segundos.
 
---- Cenário: Melhor Caso (Ordenado) ---
-Tempo de execução para 50000 elementos: 0.8140 segundos.
+--- Cenário: Caso Médio (Aleatório Único) (N=10) ---
+Array original:
+4 6 0 1 9 5 8 7 3 2 
+Ordenação concluída.
+Array ordenado:
+0 1 2 3 4 5 6 7 8 9 
+Tempo de execução: 0.0000 segundos.
 
---- Cenário: Pior Caso (Reverso) ---
-Tempo de execução para 50000 elementos: 0.8250 segundos.
-
---- Cenário: Caso Médio (Aleatório Único) ---
-Tempo de execução para 50000 elementos: 0.8210 segundos.
+--- Cenário: Melhor Caso (Ordenado) (N=10) ---
+Array original:
+0 1 2 3 4 5 6 7 8 9 
+Ordenação concluída.
+Array ordenado:
+0 1 2 3 4 5 6 7 8 9 
+Tempo de execução: 0.0000 segundos.
 ```
 
 > **Nota**: Os tempos de execução são muito similares, confirmando a complexidade O(N²) em todos os casos, pois o número de comparações domina o tempo total.
